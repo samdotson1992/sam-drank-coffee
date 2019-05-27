@@ -6,200 +6,100 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/</loc>
+  <loc>/</loc>
+  <lastmod>2019-05-27T12:00:00Z</lastmod>
+ </url>
+ <url>
+  <loc>/2019/</loc>
   <lastmod>2019-05-27T11:47:00Z</lastmod>
  </url>
  <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/2012/</loc>
+  <loc>/about-nikola/</loc>
   <lastmod>2019-05-27T11:47:00Z</lastmod>
  </url>
  <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/2019/</loc>
+  <loc>/archive.html</loc>
+  <lastmod>2019-05-27T12:07:00Z</lastmod>
+ </url>
+ <url>
+  <loc>/blog/opencv-motion-detector-using-python/</loc>
+  <lastmod>2019-05-27T11:47:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="blog/opencv-motion-detector-using-python/" />
+ </url>
+ <url>
+  <loc>/bootstrap-demo/</loc>
   <lastmod>2019-05-27T11:47:00Z</lastmod>
  </url>
  <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/about-nikola/</loc>
+  <loc>/categories/</loc>
+  <lastmod>2019-05-27T12:00:00Z</lastmod>
+ </url>
+ <url>
+  <loc>/charts/</loc>
   <lastmod>2019-05-27T11:47:00Z</lastmod>
  </url>
  <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/archive.html</loc>
-  <lastmod>2019-05-26T16:56:00Z</lastmod>
- </url>
- <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/authors/</loc>
+  <loc>/creating-a-theme/</loc>
   <lastmod>2019-05-27T11:47:00Z</lastmod>
  </url>
  <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/authors/roberto-alsina/</loc>
+  <loc>/dr-nikolas-vendetta/</loc>
   <lastmod>2019-05-27T11:47:00Z</lastmod>
  </url>
  <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/authors/sam-dotson/</loc>
+  <loc>/extending/</loc>
   <lastmod>2019-05-27T11:47:00Z</lastmod>
  </url>
  <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/blog/opencv-motion-detector-using-python/</loc>
-  <lastmod>2019-05-27T11:47:00Z</lastmod>
-  <xhtml:link rel="alternate" hreflang="en" href="https:///%5C%5Csamdrankcoffee.com/blog/opencv-motion-detector-using-python/" />
- </url>
- <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/bootstrap-demo/</loc>
+  <loc>/galleries/</loc>
   <lastmod>2019-05-27T11:47:00Z</lastmod>
  </url>
  <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/categories/</loc>
+  <loc>/galleries/demo/</loc>
   <lastmod>2019-05-27T11:47:00Z</lastmod>
  </url>
  <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/categories/blog/</loc>
+  <loc>/handbook/</loc>
   <lastmod>2019-05-27T11:47:00Z</lastmod>
  </url>
  <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/categories/cat_nikola/</loc>
+  <loc>/internals/</loc>
   <lastmod>2019-05-27T11:47:00Z</lastmod>
  </url>
  <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/categories/demo/</loc>
+  <loc>/listings-demo/</loc>
   <lastmod>2019-05-27T11:47:00Z</lastmod>
  </url>
  <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/categories/nikola/</loc>
+  <loc>/listings/</loc>
   <lastmod>2019-05-27T11:47:00Z</lastmod>
  </url>
  <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/categories/python/</loc>
+  <loc>/listings/__pycache__/</loc>
   <lastmod>2019-05-27T11:47:00Z</lastmod>
  </url>
  <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/charts/</loc>
+  <loc>/listings/hello.py.html</loc>
+  <lastmod>2019-05-27T12:07:00Z</lastmod>
+ </url>
+ <url>
+  <loc>/path-handlers/</loc>
   <lastmod>2019-05-27T11:47:00Z</lastmod>
  </url>
  <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/creating-a-theme/</loc>
+  <loc>/quickref/</loc>
   <lastmod>2019-05-27T11:47:00Z</lastmod>
  </url>
  <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/dr-nikolas-vendetta/</loc>
+  <loc>/quickstart/</loc>
   <lastmod>2019-05-27T11:47:00Z</lastmod>
  </url>
  <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/extending/</loc>
+  <loc>/social_buttons/</loc>
   <lastmod>2019-05-27T11:47:00Z</lastmod>
  </url>
  <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/galleries/</loc>
-  <lastmod>2019-05-27T11:47:00Z</lastmod>
- </url>
- <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/galleries/demo/</loc>
-  <lastmod>2019-05-27T11:47:00Z</lastmod>
- </url>
- <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/handbook/</loc>
-  <lastmod>2019-05-27T11:47:00Z</lastmod>
- </url>
- <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/internals/</loc>
-  <lastmod>2019-05-27T11:47:00Z</lastmod>
- </url>
- <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/listings-demo/</loc>
-  <lastmod>2019-05-27T11:47:00Z</lastmod>
- </url>
- <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/listings/</loc>
-  <lastmod>2019-05-27T11:47:00Z</lastmod>
- </url>
- <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/listings/__pycache__/</loc>
-  <lastmod>2019-05-27T11:47:00Z</lastmod>
- </url>
- <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/listings/hello.py.html</loc>
-  <lastmod>2019-05-26T16:50:00Z</lastmod>
- </url>
- <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/pages/about-nikola/</loc>
-  <lastmod>2019-05-27T11:47:00Z</lastmod>
- </url>
- <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/pages/bootstrap-demo/</loc>
-  <lastmod>2019-05-27T11:47:00Z</lastmod>
- </url>
- <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/pages/charts/</loc>
-  <lastmod>2019-05-27T11:47:00Z</lastmod>
- </url>
- <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/pages/creating-a-theme/</loc>
-  <lastmod>2019-05-27T11:47:00Z</lastmod>
- </url>
- <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/pages/dr-nikolas-vendetta/</loc>
-  <lastmod>2019-05-27T11:47:00Z</lastmod>
- </url>
- <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/pages/extending/</loc>
-  <lastmod>2019-05-27T11:47:00Z</lastmod>
- </url>
- <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/pages/handbook/</loc>
-  <lastmod>2019-05-27T11:47:00Z</lastmod>
- </url>
- <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/pages/internals/</loc>
-  <lastmod>2019-05-27T11:47:00Z</lastmod>
- </url>
- <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/pages/listings-demo/</loc>
-  <lastmod>2019-05-27T11:47:00Z</lastmod>
- </url>
- <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/pages/path-handlers/</loc>
-  <lastmod>2019-05-27T11:47:00Z</lastmod>
- </url>
- <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/pages/quickref/</loc>
-  <lastmod>2019-05-27T11:47:00Z</lastmod>
- </url>
- <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/pages/quickstart/</loc>
-  <lastmod>2019-05-27T11:47:00Z</lastmod>
- </url>
- <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/pages/social_buttons/</loc>
-  <lastmod>2019-05-27T11:47:00Z</lastmod>
- </url>
- <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/pages/theming/</loc>
-  <lastmod>2019-05-27T11:47:00Z</lastmod>
- </url>
- <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/path-handlers/</loc>
-  <lastmod>2019-05-27T11:47:00Z</lastmod>
- </url>
- <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/posts/opencv-motion-sensor/</loc>
-  <lastmod>2019-05-27T11:47:00Z</lastmod>
- </url>
- <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/posts/welcome-to-nikola/</loc>
-  <lastmod>2019-05-27T11:47:00Z</lastmod>
- </url>
- <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/quickref/</loc>
-  <lastmod>2019-05-27T11:47:00Z</lastmod>
- </url>
- <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/quickstart/</loc>
-  <lastmod>2019-05-27T11:47:00Z</lastmod>
- </url>
- <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/social_buttons/</loc>
-  <lastmod>2019-05-27T11:47:00Z</lastmod>
- </url>
- <url>
-  <loc>https:///%5C%5Csamdrankcoffee.com/%5C%5Csamdrankcoffee.com/theming/</loc>
+  <loc>/theming/</loc>
   <lastmod>2019-05-27T11:47:00Z</lastmod>
  </url>
 </urlset>
