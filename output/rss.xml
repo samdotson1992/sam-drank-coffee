@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sam drank coffee</title><link></link><description>Random things I do under the influence of caffeine.</description><atom:link href="rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:samdotson1992@gmail.com"&gt;Sam Dotson&lt;/a&gt; </copyright><lastBuildDate>Mon, 27 May 2019 12:07:34 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>OpenCV motion detector using Python</title><link>blog/opencv-motion-detector-using-python/</link><dc:creator>Sam Dotson</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sam drank coffee</title><link></link><description>Random things I do under the influence of caffeine.</description><atom:link href="rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:samdotson1992@gmail.com"&gt;Sam Dotson&lt;/a&gt; </copyright><lastBuildDate>Sat, 01 Jun 2019 18:26:07 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>OpenCV motion detector using Python</title><link>blog/opencv-motion-detector-using-python/</link><dc:creator>Sam Dotson</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;This is going to be a blog about fun random ideas I come up with hyped on coffee. As my first post I'll be exploring the idea making a motion sensor using OpenCV and Python. The purpose is to detect ambient motion in a relatively still room. The motion sensor will keep rolling average of motion levels present and make some kind of notification when motion spikes.&lt;/p&gt;
+&lt;p&gt;This is going to be a blog about fun random ideas I come up with while hyped up on coffee. As my first post I'll be exploring the idea making a motion sensor using OpenCV and Python. The purpose is to detect ambient motion in a relatively still room. The "sensor" will keep a rolling average for motion levels present and make some kind of notification when motion spikes.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -36,8 +36,8 @@
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;In a perfectly still frame the background subtractor would return only black pixels. To determine the amount of a motion in a frame we need only sum up all the pixels in a frame and determine if the number we get is unusually high.&lt;/p&gt;
-&lt;p&gt;To do this I've set up a moving window to collect stats on motion levels and set the window size to 100 frames. For determining if a value is unusually high, I'll look for values 1 standard deviation over the mean.&lt;/p&gt;
+&lt;p&gt;In a perfectly still frame the background subtractor would return only black pixels (e.g. a matrix of 0s). To determine the amount of a motion in a frame we need only sum up all the pixels in a frame and determine if the number we get is unusually high.&lt;/p&gt;
+&lt;p&gt;To do this I've set up a moving window to collect stats on motion levels and set the window size to 100 frames. To determine if a value is unusually high, I'll look for values 1 standard deviation over the mean.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -88,12 +88,4 @@
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;By tuning the parameters one can increase the moving average window or lower the threshold for what constitutes a motion spike.&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
 &lt;/div&gt;&lt;/div&gt;</description><guid>blog/opencv-motion-detector-using-python/</guid><pubDate>Sun, 26 May 2019 16:51:45 GMT</pubDate></item></channel></rss>
