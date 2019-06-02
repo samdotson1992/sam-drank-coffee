@@ -91,7 +91,7 @@ BLOG_DESCRIPTION = "Random things I do under the influence of caffeine."  # (tra
 # If a specific post is not translated to a language, then the version
 # in the default language will be shown instead.
 
-THEME= "detox"
+
 
 # What is the default language?
 DEFAULT_LANG = "en"
@@ -156,7 +156,7 @@ NAVIGATION_ALT_LINKS = {
 }
 
 # Name of the theme to use.
-THEME = "bootblog4"
+THEME = "detox"
 
 # Primary color of your theme. This will be used to customize your theme.
 # Must be a HEX value.

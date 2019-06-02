@@ -7,11 +7,11 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>/galleries/demo/rss.xml</loc>
-  <lastmod>2019-05-27T12:07:00Z</lastmod>
+  <lastmod>2019-06-02T01:03:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>/galleries/rss.xml</loc>
-  <lastmod>2019-05-27T12:07:00Z</lastmod>
+  <lastmod>2019-06-02T01:03:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>/rss.xml</loc>
@@ -19,6 +19,6 @@
  </sitemap>
  <sitemap>
   <loc>/sitemap.xml</loc>
-  <lastmod>2019-06-01T18:26:00Z</lastmod>
+  <lastmod>2019-06-02T01:03:00Z</lastmod>
  </sitemap>
 </sitemapindex>

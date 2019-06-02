@@ -5,12 +5,12 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1559437214.2721756
+_modified_time = 1559437453.6934679
 _enable_loop = True
-_template_filename = 'c:/users/samuel/anaconda3/lib/site-packages/nikola/data/themes/bootstrap4/templates/post.tmpl'
+_template_filename = 'themes/detox/templates/post.tmpl'
 _template_uri = 'post.tmpl'
 _source_encoding = 'utf-8'
-_exports = ['extra_head', 'content', 'sourcelink']
+_exports = ['extra_head', 'content']
 
 
 def _mako_get_namespace(context, name):
@@ -32,9 +32,6 @@ def _mako_generate_namespaces(context):
     ns = runtime.TemplateNamespace('math', context._clean_inheritance_tokens(), templateuri='math_helper.tmpl', callables=None,  calling_uri=_template_uri)
     context.namespaces[(__name__, 'math')] = ns
 
-    ns = runtime.TemplateNamespace('ui', context._clean_inheritance_tokens(), templateuri='ui_helper.tmpl', callables=None,  calling_uri=_template_uri)
-    context.namespaces[(__name__, 'ui')] = ns
-
 def _mako_inherit(template, context):
     _mako_generate_namespaces(context)
     return runtime._inherit_from(context, 'base.tmpl', _template_uri)
@@ -42,25 +39,21 @@ def render_body(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
         __M_locals = __M_dict_builtin(pageargs=pageargs)
-        def extra_head():
-            return render_extra_head(context._locals(__M_locals))
-        messages = context.get('messages', UNDEFINED)
         def content():
             return render_content(context._locals(__M_locals))
-        site_has_comments = context.get('site_has_comments', UNDEFINED)
-        def sourcelink():
-            return render_sourcelink(context._locals(__M_locals))
-        comments = _mako_get_namespace(context, 'comments')
         post = context.get('post', UNDEFINED)
-        pheader = _mako_get_namespace(context, 'pheader')
-        math = _mako_get_namespace(context, 'math')
-        show_sourcelink = context.get('show_sourcelink', UNDEFINED)
-        smartjoin = context.get('smartjoin', UNDEFINED)
-        ui = _mako_get_namespace(context, 'ui')
+        def extra_head():
+            return render_extra_head(context._locals(__M_locals))
+        comments = _mako_get_namespace(context, 'comments')
+        messages = context.get('messages', UNDEFINED)
+        _link = context.get('_link', UNDEFINED)
+        site_has_comments = context.get('site_has_comments', UNDEFINED)
         helper = _mako_get_namespace(context, 'helper')
+        author_pages_generated = context.get('author_pages_generated', UNDEFINED)
+        math = _mako_get_namespace(context, 'math')
+        date_format = context.get('date_format', UNDEFINED)
         parent = context.get('parent', UNDEFINED)
         __M_writer = context.writer()
-        __M_writer('\n')
         __M_writer('\n')
         __M_writer('\n')
         __M_writer('\n')
@@ -75,11 +68,6 @@ def render_body(context,**pageargs):
             context['self'].content(**pageargs)
         
 
-        __M_writer('\n\n')
-        if 'parent' not in context._data or not hasattr(context._data['parent'], 'sourcelink'):
-            context['self'].sourcelink(**pageargs)
-        
-
         __M_writer('\n')
         return ''
     finally:
@@ -89,20 +77,19 @@ def render_body(context,**pageargs):
 def render_extra_head(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
+        post = context.get('post', UNDEFINED)
         def extra_head():
             return render_extra_head(context)
-        smartjoin = context.get('smartjoin', UNDEFINED)
-        helper = _mako_get_namespace(context, 'helper')
-        post = context.get('post', UNDEFINED)
-        parent = context.get('parent', UNDEFINED)
         math = _mako_get_namespace(context, 'math')
+        parent = context.get('parent', UNDEFINED)
+        helper = _mako_get_namespace(context, 'helper')
         __M_writer = context.writer()
         __M_writer('\n    ')
         __M_writer(str(parent.extra_head()))
         __M_writer('\n')
         if post.meta('keywords'):
             __M_writer('    <meta name="keywords" content="')
-            __M_writer(filters.html_escape(str(smartjoin(', ', post.meta('keywords')))))
+            __M_writer(filters.html_escape(str(post.meta('keywords'))))
             __M_writer('">\n')
         __M_writer('    <meta name="author" content="')
         __M_writer(filters.html_escape(str(post.author())))
@@ -138,27 +125,45 @@ def render_extra_head(context,**pageargs):
 def render_content(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
-        messages = context.get('messages', UNDEFINED)
         def content():
             return render_content(context)
-        site_has_comments = context.get('site_has_comments', UNDEFINED)
-        comments = _mako_get_namespace(context, 'comments')
         post = context.get('post', UNDEFINED)
-        pheader = _mako_get_namespace(context, 'pheader')
+        comments = _mako_get_namespace(context, 'comments')
+        messages = context.get('messages', UNDEFINED)
+        _link = context.get('_link', UNDEFINED)
+        site_has_comments = context.get('site_has_comments', UNDEFINED)
+        author_pages_generated = context.get('author_pages_generated', UNDEFINED)
         math = _mako_get_namespace(context, 'math')
-        helper = _mako_get_namespace(context, 'helper')
+        date_format = context.get('date_format', UNDEFINED)
         __M_writer = context.writer()
-        __M_writer('\n<article class="post-')
-        __M_writer(str(post.meta('type')))
-        __M_writer(' h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article">\n    ')
-        __M_writer(str(pheader.html_post_header()))
-        __M_writer('\n    <div class="e-content entry-content" itemprop="articleBody text">\n    ')
+        __M_writer('\n<article class="post">\n\t<header class="post-header">\n        <h3 class="p-post-title">')
+        __M_writer(str(post.title()))
+        __M_writer('</h3>\n    </header>\n\n    <section class="post-content">\n\n    ')
         __M_writer(str(post.text()))
-        __M_writer('\n    </div>\n    <aside class="postpromonav">\n    <nav>\n    ')
-        __M_writer(str(helper.html_tags(post)))
-        __M_writer('\n    ')
-        __M_writer(str(helper.html_pager(post)))
-        __M_writer('\n    </nav>\n    </aside>\n')
+        __M_writer('\n </section>\n\n    <hr>\n\n    <footer class="post-footer">\n        <section class="f-1">\n\n            <section class="author"><p>\n')
+        if author_pages_generated:
+            __M_writer('                <a href="')
+            __M_writer(str(_link('author', post.author())))
+            __M_writer('">')
+            __M_writer(filters.html_escape(str(post.author())))
+            __M_writer('</a>\n')
+        else:
+            __M_writer('                ')
+            __M_writer(filters.html_escape(str(post.author())))
+            __M_writer('\n')
+        __M_writer('            </p></section>\n\n\n            <p class="f-post-time"><time datetime="')
+        __M_writer(str(post.formatted_date('webiso')))
+        __M_writer('">')
+        __M_writer(filters.html_escape(str(post.formatted_date(date_format))))
+        __M_writer('</time></p>\n        </section>\n        <section class="f-2">\n            <section class="share">\n                <span>Share:\n                <a class="icon-twitter" href="http://twitter.com/share?text=')
+        __M_writer(filters.url_escape(str(post.title())))
+        __M_writer('&url=')
+        __M_writer(filters.url_escape(str(post.permalink(absolute=True))))
+        __M_writer('"\n                    onclick="window.open(this.href, \'twitter-share\', \'width=550,height=235\');return false;">\n                    <i class="fa fa-twitter"></i>\n                </a>\n                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=')
+        __M_writer(filters.url_escape(str(post.permalink(absolute=True))))
+        __M_writer('"\n                    onclick="window.open(this.href, \'facebook-share\',\'width=580,height=296\');return false;">\n                    <i class="fa fa-facebook"></i>\n                </a>\n                <a class="icon-google-plus" href="https://plus.google.com/share?url=')
+        __M_writer(filters.url_escape(str(post.permalink(absolute=True))))
+        __M_writer('"\n                   onclick="window.open(this.href, \'google-plus-share\', \'width=490,height=530\');return false;">\n                    <i class="fa fa-google-plus"></i>\n                </a>\n                </span>\n            </section>\n\n\n        </section>\n\n')
         if not post.meta('nocomments') and site_has_comments:
             __M_writer('        <section class="comments hidden-print">\n        <h2>')
             __M_writer(str(messages("Comments")))
@@ -167,7 +172,7 @@ def render_content(context,**pageargs):
             __M_writer('\n        </section>\n')
         __M_writer('    ')
         __M_writer(str(math.math_scripts_ifpost(post)))
-        __M_writer('\n</article>\n')
+        __M_writer('\n\n    </footer>\n\n</article>\n')
         __M_writer(str(comments.comment_link_script()))
         __M_writer('\n')
         return ''
@@ -175,27 +180,8 @@ def render_content(context,**pageargs):
         context.caller_stack._pop_frame()
 
 
-def render_sourcelink(context,**pageargs):
-    __M_caller = context.caller_stack._push_frame()
-    try:
-        def sourcelink():
-            return render_sourcelink(context)
-        post = context.get('post', UNDEFINED)
-        show_sourcelink = context.get('show_sourcelink', UNDEFINED)
-        ui = _mako_get_namespace(context, 'ui')
-        __M_writer = context.writer()
-        __M_writer('\n')
-        if show_sourcelink:
-            __M_writer('    ')
-            __M_writer(str(ui.show_sourcelink(post.source_link())))
-            __M_writer('\n')
-        return ''
-    finally:
-        context.caller_stack._pop_frame()
-
-
 """
 __M_BEGIN_METADATA
-{"filename": "c:/users/samuel/anaconda3/lib/site-packages/nikola/data/themes/bootstrap4/templates/post.tmpl", "uri": "post.tmpl", "source_encoding": "utf-8", "line_map": {"23": 2, "26": 3, "29": 4, "32": 5, "35": 6, "41": 0, "63": 2, "64": 3, "65": 4, "66": 5, "67": 6, "68": 7, "73": 28, "78": 51, "83": 57, "89": 9, "100": 9, "101": 10, "102": 10, "103": 11, "104": 12, "105": 12, "106": 12, "107": 14, "108": 14, "109": 14, "110": 15, "111": 16, "112": 16, "113": 16, "114": 16, "115": 16, "116": 18, "117": 19, "118": 19, "119": 19, "120": 19, "121": 19, "122": 21, "123": 22, "124": 24, "125": 24, "126": 24, "127": 25, "128": 25, "129": 26, "130": 26, "131": 27, "132": 27, "138": 30, "151": 30, "152": 31, "153": 31, "154": 32, "155": 32, "156": 34, "157": 34, "158": 38, "159": 38, "160": 39, "161": 39, "162": 42, "163": 43, "164": 44, "165": 44, "166": 45, "167": 45, "168": 48, "169": 48, "170": 48, "171": 50, "172": 50, "178": 53, "187": 53, "188": 54, "189": 55, "190": 55, "191": 55, "197": 191}}
+{"filename": "themes/detox/templates/post.tmpl", "uri": "post.tmpl", "source_encoding": "utf-8", "line_map": {"23": 2, "26": 3, "29": 4, "32": 5, "38": 0, "57": 2, "58": 3, "59": 4, "60": 5, "61": 6, "66": 27, "71": 89, "77": 8, "87": 8, "88": 9, "89": 9, "90": 10, "91": 11, "92": 11, "93": 11, "94": 13, "95": 13, "96": 13, "97": 14, "98": 15, "99": 15, "100": 15, "101": 15, "102": 15, "103": 17, "104": 18, "105": 18, "106": 18, "107": 18, "108": 18, "109": 20, "110": 21, "111": 23, "112": 23, "113": 23, "114": 24, "115": 24, "116": 25, "117": 25, "118": 26, "119": 26, "125": 29, "139": 29, "140": 32, "141": 32, "142": 37, "143": 37, "144": 46, "145": 47, "146": 47, "147": 47, "148": 47, "149": 47, "150": 48, "151": 49, "152": 49, "153": 49, "154": 51, "155": 54, "156": 54, "157": 54, "158": 54, "159": 59, "160": 59, "161": 59, "162": 59, "163": 63, "164": 63, "165": 67, "166": 67, "167": 77, "168": 78, "169": 79, "170": 79, "171": 80, "172": 80, "173": 83, "174": 83, "175": 83, "176": 88, "177": 88, "183": 177}}
 __M_END_METADATA
 """
