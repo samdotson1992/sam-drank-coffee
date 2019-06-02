@@ -15,6 +15,8 @@ import time
 # ! Option (b) is used for settings that are different in different languages.
 
 
+
+
 # Data about this site
 BLOG_AUTHOR = "Sam Dotson"  # (translatable)
 BLOG_TITLE = "Sam drank coffee"  # (translatable)
@@ -88,6 +90,8 @@ BLOG_DESCRIPTION = "Random things I do under the influence of caffeine."  # (tra
 # (cf. the modules at nikola/data/themes/base/messages/).
 # If a specific post is not translated to a language, then the version
 # in the default language will be shown instead.
+
+THEME= "detox"
 
 # What is the default language?
 DEFAULT_LANG = "en"
